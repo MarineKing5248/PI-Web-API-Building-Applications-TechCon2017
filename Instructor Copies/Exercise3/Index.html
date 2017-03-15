@@ -1,0 +1,60 @@
+<!-- Import JQuery -->
+<script src="Dependencies/jquery.min.js"></script>
+
+<!-- Import Bootstrap -->
+<link rel="stylesheet" href="Dependencies/bootstrap.min.css">
+<script src="Dependencies/bootstrap.min.js"></script>
+
+<!-- Import our style sheet -->
+<link rel="stylesheet" href="Style.css">
+
+<!-- Import our library for the progress bar -->
+<script src="Dependencies/progressbar.min.js"></script>
+
+<!-- Import our library for drawing a heat map -->
+<script src="Dependencies/highcharts.js"></script>
+<script src="Dependencies/heatmap.js"></script>
+<script src="Dependencies/exporting.js"></script>
+
+<!-- Import our helper JavaScript files -->
+<script src="HeatMapHelper.js"></script>
+<script src="PiWebApiHelper.js"></script>
+
+<!--
+	Specify what Javascript file will be executed on 
+    page load here (Exercise 3A, 3B, 3C )
+--> 
+<script src="MainController.js"></script>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OSIsoft TechCon '17</title>
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<div class="navbar-left">
+				<a href="https://www.osisoft.com"><img class="navbarLogo img-responsive" src="Images/WhiteOSILogo.png"></a>
+			</div>
+		</div>
+	</nav> 
+
+	<div>
+		<div class="container text-center">
+			<h1 class="jumbotron-heading">TechCon 2017!</h1>
+			<p class="lead text-muted">All of this data was retrieved through PI Web API. How easy was that?</p>
+			<img class="img-responsive center" src="Images/presenters.png"></a>
+		</div>
+		
+		<div class="container">
+			<div id="progressBar"><!-- Progress bar will be drawn inside this DIV --></div>
+
+			<div id="display" class="row">	
+				<div id="heatMap"><!-- Heat map will be drawn inside this DIV --></div>			
+			</div>
+		</div>
+	</div>	
+</body>
+</html>

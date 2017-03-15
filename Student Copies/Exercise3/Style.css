@@ -1,0 +1,33 @@
+body {
+    background-color: #cfcfcf;
+}
+
+.navbar{
+	background-color: #446789;
+	padding: 15px;
+}
+
+.navbarLogo{
+	height: auto;
+    width: 50%;
+}
+
+.navbarText{
+	color: white;
+}
+
+.center{
+	margin: 0 auto;
+}
+
+.studentTable{
+	background-color:blue;
+}
+
+#progressBar {
+  margin: 20px;
+  width: 400px;
+  height: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
